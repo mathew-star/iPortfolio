@@ -114,8 +114,8 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech in Mechanical Engineering</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mathewjosef41@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
@@ -356,33 +356,45 @@
 
 
 <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio section-bg">
+<section id="portfolio" class="portfolio section-bg py-5">
   <div class="container">
-
     <div class="section-title">
       <h2>Portfolio</h2>
       <p>Here I provide all the details of my projects</p>
     </div>
 
-    <div class="row" data-aos="fade-up">
+    <div class="row mb-3" data-aos="fade-up">
       <div class="col-lg-12 d-flex justify-content-center">
-        <ul id="portfolio-flters">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-web">Web</li>
+        <ul id="portfolio-flters" class="list-inline">
+          <li class="list-inline-item" data-filter="*" class="filter-active">All</li>
+          <li class="list-inline-item" data-filter=".filter-web">Web</li>
         </ul>
       </div>
     </div>
 
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
       <!-- Project Item 1 -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mb-4">
+        <div class="portfolio-wrap">
+          <img src="assets/img/SmartClass/N/Screenshot from 2024-06-26 22-15-39.png" class="img-fluid" alt="Project 2">
+          <div class="portfolio-info">
+            <h4>SMARTCLASS </h4>
+            <p class="portfolio-text">A Full stack advanced online classroom management platform built with Django (backend) and React & Tailwind CSS (frontend) </p>
+            <div class="portfolio-links">
+              <a href="assets/img/SmartClass/N/Screenshot from 2024-06-26 22-15-18.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="smart-class"><i class="bx bx-plus"></i></a>
+              <a href="./smart-class.html" title="SmartClass project details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 2 -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mb-4">
         <div class="portfolio-wrap">
           <img src="assets/img/google-logo.jpg" class="img-fluid" alt="Project 1">
           <div class="portfolio-info">
             <h4>Google Pixel Clone</h4>
-            <p>Simple Responsive Google pixel clone using HTML,CSS,Bootstrap & Javascript  </p>
-            <br>
+            <p class="portfolio-text">Simple Responsive Google pixel clone using HTML,CSS,Bootstrap & Javascript  </p>
             <div class="portfolio-links">
               <a href="assets/img/google-logo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 1"><i class="bx bx-plus"></i></a>
               <a href="./portfo1-details.html" title="Project 1 Details"><i class="bx bx-link"></i></a>
@@ -391,14 +403,13 @@
         </div>
       </div>
 
-      <!-- Project Item 2 -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <!-- Project Item 3 -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mb-4">
         <div class="portfolio-wrap">
           <img src="assets/img/Microsoft.jpg" class="img-fluid" alt="Project 2">
           <div class="portfolio-info">
             <h4>Microsoft Clone</h4>
-            <p>Simple Responsive Microsoft   clone using HTML,CSS,Bootstrap & Javascript</p>
-            <br>  
+            <p class="portfolio-text">Simple Responsive Microsoft clone using HTML,CSS,Bootstrap & Javascript</p>
             <div class="portfolio-links">
               <a href="assets/img/Microsoft.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
               <a href="./portfo2-details.html" title="Project 2 Details"><i class="bx bx-link"></i></a>
@@ -408,14 +419,12 @@
       </div>
 
       <!-- Add more project items here -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mb-4">
         <div class="portfolio-wrap">
-          <img src="assets/img/ECOM/Screenshot from 2024-04-25 20-15-20.png" class="img-fluid mb-5" alt="Project 2">
+          <img src="assets/img/ECOM/Screenshot from 2024-04-25 20-15-20.png" class="img-fluid" alt="Project 2">
           <div class="portfolio-info">
-            <h4>AtheletHaven </h4>
-            <p>A Full stack E-commerce project using Django for Backend and HTML,CSS,Bootstrap & Javascript for front-end </p>
-            <br>
-            <br>
+            <h4>AtheletHaven</h4>
+            <p class="portfolio-text">A Full stack E-commerce project using Django for Backend and HTML,CSS,Bootstrap & Javascript for front-end </p>
             <div class="portfolio-links">
               <a href="assets/img/Microsoft.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
               <a href="./athelethaven.html" title="Project 2 Details"><i class="bx bx-link"></i></a>
@@ -424,13 +433,12 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web ">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mb-4">
         <div class="portfolio-wrap">
           <img src="./assets/img/netflix__1_.png" class="img-fluid" alt="Project 2">
           <div class="portfolio-info">
             <h4>Netfilx Clone</h4>
-            <p>Simple Netflix clone using React, Redux, Firebase</p>
-            <br>
+            <p class="portfolio-text">Simple Netflix clone using React, Redux, Firebase</p>
             <div class="portfolio-links">
               <a href="./assets/img/netflix__1_.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
               <a href="./Netfix.html" title="Project 2 Details"><i class="bx bx-link"></i></a>
@@ -439,14 +447,12 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web ">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mb-4">
         <div class="portfolio-wrap">
           <img src="./assets/img/OLX-logo.jpg" class="img-fluid" alt="Project 2">
           <div class="portfolio-info">
             <h4 class="mt-5">OLX Clone</h4>
-            <p>Simple OLX clone using React, Redux, Firebase</p>
-            <br>
-            <br>
+            <p class="portfolio-text">Simple OLX clone using React, Redux, Firebase</p>
             <div class="portfolio-links">
               <a href="./assets/img/OLX-logo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
               <a href="./Olx.html" title="Project 2 Details"><i class="bx bx-link"></i></a>
@@ -455,15 +461,12 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web ">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web mb-4">
         <div class="portfolio-wrap">
-          <img src="assets/img/JWT/Screenshot from 2024-04-25 21-31-45.png" class="img-fluid mb-5" alt="Project 2">
+          <img src="assets/img/JWT/Screenshot from 2024-04-25 21-31-45.png" class="img-fluid" alt="Project 2">
           <div class="portfolio-info">
             <h4>JWT</h4>
-            <p >Simple authentication project using JWT, using Django REST , react, redux</p>
-            <br>
-            <br >
-            
+            <p class="portfolio-text">Simple authentication project using JWT, using Django REST, React, Redux</p>
             <div class="portfolio-links">
               <a href="assets/img/JWT/Screenshot from 2024-04-25 21-31-45.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
               <a href="./Jwt.html" title="Project 2 Details"><i class="bx bx-link"></i></a>
@@ -471,11 +474,10 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
-</section><!-- End Portfolio Section -->
+</section>
+<!-- End Portfolio Section -->
 
 
     <!-- ======= Services Section ======= -->
