@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tools-root {
+  --t-ink: #0b1016;
+  --t-panel: #111923;
+  --t-amber: #ffb000;
+  --t-bone: #e8e1d0;
+  --t-mute: #7d8a96;
+  --t-ok: #b5e063;
+  background:
+    radial-gradient(rgba(255, 176, 0, 0.07) 1px, transparent 1px) 0 0 / 22px 22px,
+    radial-gradient(ellipse at 50% 0%, #142030 0%, var(--t-ink) 65%);
+  color: var(--t-bone);
+}
+
+.tools-scan {
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px 3px);
+  mix-blend-mode: overlay;
+}
+
+.tools-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.tools-cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  margin-left: 2px;
+  background: var(--t-amber);
+  vertical-align: -0.15em;
+  animation: tools-blink 1s steps(1) infinite;
+}
+
+@keyframes tools-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tools-cursor {
+    animation: none;
+  }
+}

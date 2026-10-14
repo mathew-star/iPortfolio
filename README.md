@@ -1,2 +1,0 @@
-# iPortfolio
- bootstrap
